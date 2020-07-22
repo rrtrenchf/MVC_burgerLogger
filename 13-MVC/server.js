@@ -23,7 +23,7 @@ var routes = require("./controllers/burger_controller.js");
 app.use(routes);
 
 // Start our server so that it can begin listening to client requests.
-app.listen(PORT, function() {
-  // Log (server-side) when our server has started
-  console.log("Server listening on: http://localhost:" + PORT);
-});
+fastify.listen(process.env.PORT || 3000, function (err) {
+  if (err) throw err
+  console.log(`server listening on ${fastify.server.address().port}`)
+})
