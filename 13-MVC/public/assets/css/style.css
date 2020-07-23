@@ -1,6 +1,6 @@
 body {
   background-color: rgb(243, 198, 115);
-  background-image: url("../BURGER.png");
+  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("../BURGER.png");
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
 
 }
@@ -47,4 +47,9 @@ li {
   button:active {
     font-size: 20px ;
   }
-  
+  h1, h2 {
+    font-family: 'Lexend Zetta', sans-serif;
+  }
+  label, input, li {
+    font-family: 'Open Sans Condensed', sans-serif;
+  }
